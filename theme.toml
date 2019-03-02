@@ -1,0 +1,12 @@
+name = "Simple"
+license = ""
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = []
+min_version = 0.17
+
+[author]
+  name = "Luis Vázquez"
+  homepage = "https://lui.sv/"

@@ -1,12 +1,12 @@
 name = "Bare"
-license = "MIT"
-licenselink = "//github.com/luisv5z/Bare/blob/master/LICENSE"
+license = "MIT License"
+licenselink = "https://github.com/luisv5z/Bare/blob/master/LICENSE"
 description = "A simple theme for Hugo."
-homepage = "//github.com/luisv5z/Bare"
-tags = ["blog", "portfolio", "projects", "minimal", "responsive"]
-features = ["blog", "themes", "minimal", "responsive"]
+homepage = "https://lui.sv/"
+tags = [hugo, theme, minimal, simple, monochrome, inter]
+features = [hugo, simple, minimal, monochrome, inter]
 min_version = 0.17
 
 [author]
   name = "Luis Vázquez"
-  homepage = "//lui.sv/"
+  homepage = "https://lui.sv/"

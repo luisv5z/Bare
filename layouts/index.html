@@ -1,30 +1,22 @@
 {{ partial "header.html" . }}
 
+<div class="container">
 <section id="content">
-  <section id="about">
-    <p>I’m Luis Vázquez, a developer.</p>
-
-    <p>Obsessed with technology from an early age, I decided to make a living with it. Since then, I’ve been working with friends and organizations whose aim is to make the space we live in a better place.</p>
-
-    <p>You can find me at the usual places around the web as <a href="#social">@luisv5z</a>. If you’d prefer to send me an email, <a href="mailto:hello@lui.sv">hello@lui.sv</a> is the address.</p>
-  </section>
-
-  <ul class="posts_listing">
-    {{ range .Data.Pages.ByPublishDate }}
-      <li>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div id="date">
-          <time>{{ .Date.Format (.Site.Params.dateform | default "January 2019") }}</time>
-        </div>
-      </li>
-    {{ end }}
-  </ul>
+ <section id="about">
+ {{ block "main" . }}
+ {{ end }}
 </section>
 
-<footer id="social" class="animate jumpAround">
-  <section id="rapper">
-    <p>I browse <a href="//www.facebook.com/luisv5z">Facebook</a>. Publish code on <a  href="//github.com/luisv5z">GitHub</a>. Like pictures on <a href="//instagram.com/luisv5z">Instagram</a>. Make playlists on <a href="//open.spotify.com/user/luisv5z">Spotify</a>, and keep up with current events on <a href="//twitter.com/luisv5z">Twitter</a>.
-  </section>
-</footer>
-
+<ul class="posts_listing">
+  <h2>Latest</h2>
+  {{ range where .Site.Pages "Params.type" "post" }}
+    <li>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <div id="date">
+        <time>{{ .PublishDate.Format "Jan 2006" }}</time>
+      </div>
+    </li>
+  {{ end }}
+</ul>
+</section>
 {{ partial "footer.html" . }}

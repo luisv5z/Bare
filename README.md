@@ -1,6 +1,6 @@
-# Simple
+# Bare
 
-A theme for Hugo.
+A simple theme for Hugo.
 
 ## MIT License
 

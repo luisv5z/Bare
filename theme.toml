@@ -3,8 +3,8 @@ license = "MIT License"
 licenselink = "https://github.com/luisv5z/Bare/blob/master/LICENSE"
 description = "A simple theme for Hugo."
 homepage = "https://lui.sv/"
-tags = [hugo, theme, minimal, simple, monochrome, inter]
-features = [hugo, simple, minimal, monochrome, inter]
+tags = [hugo, theme, minimal, simple, monochrome, inter, dark mode]
+features = [hugo, simple, minimal, monochrome, inter, dark mode]
 min_version = 0.17
 
 [author]

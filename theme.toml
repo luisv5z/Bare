@@ -6,7 +6,6 @@ homepage = "https://lui.sv/"
 tags = [hugo, theme, minimal, simple, monochrome, inter]
 features = [hugo, simple, minimal, monochrome, inter]
 min_version = 0.17
-disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [author]
   name = "Luis Vázquez"

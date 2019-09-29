@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+	<meta name="generator" content="Hugo 0.58.3" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="none">
+    <title>
+      
+      
+        
+      
+    </title>
+    <link rel="canonical" href="/">
+    <meta name="google" content="nositelinkssearchbox" />
+    <base href="">
+    
+
+    <style>
+  @import url('https://rsms.me/inter/inter.css');
+  
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+
+  * {
+    border: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(0,0,0);
+    
+    overscroll-behavior-y: none;
+    scroll-behavior: smooth;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-kerning: normal;
+    -moz-font-kerning: normal;
+    -ms-font-kerning: normal;
+    -o-font-kerning: normal;
+    font-kerning: normal;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    -moz-font-feature-settings:    "calt" 1, "kern" 1, "liga" 1;
+    -ms-font-feature-settings:     "calt" 1, "kern" 1, "liga" 1;
+    -o-font-feature-settings:      "calt" 1, "kern" 1, "liga" 1;
+    -webkit-font-feature-settings: "calt" 1, "kern" 1, "liga" 1;
+    font-feature-settings:         "calt" 1, "kern" 1, "liga" 1;
+  }
+
+  .jumpAround {
+    animation-name: jumpAround;
+    -webkit-animation-name: jumpAround;
+    animation-duration: 1.25s;
+    -webkit-animation-duration: 1.25s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+  }
+
+  @keyframes jumpAround {
+    0%  { transform: translateY(110%) }
+    50% { transform: translateY(-8%)  }
+    65% { transform: translateY(4%)   }
+    80% { transform: translateY(-4%)  }
+    95% { transform: translateY(2%)   } to { transform:translateY(0%) }
+  }
+
+  @-webkit-keyframes jumpAround {
+    0%  { -webkit-transform: translateY(110%) }
+    50% { -webkit-transform: translateY(-8%)  }
+    65% { -webkit-transform: translateY(4%)   }
+    80% { -webkit-transform: translateY(-4%)  }
+    95% { -webkit-transform: translateY(2%)   } to { -webkit-transform:translateY(0%) }
+  }
+
+  .container {
+    background-color: rgb(255,255,255);
+  }
+
+  #content {
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: left;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  #about {
+    padding: 5em 0 0 0;
+  }
+
+  p {
+    line-height: 1.75em;
+    margin: 1em 0;
+    color: rgb(0,0,0);
+  }
+
+  a {
+    text-decoration-skip: ink;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.65;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  pre, code {
+    font: 12px Monaco, monospace;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style: italic;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family: Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  q:before {
+    content: "\201C";
+  }
+
+  q:after {
+    content: "\201D";
+  }
+
+  del,s {
+    text-decoration: line-through;
+  }
+
+  blockquote {
+    text-align: center;
+    padding: 50px;
+  }
+
+  blockquote p {
+    display: inline-block;
+    font-style: italic;
+  }
+
+  blockquote:before,blockquote:after {
+    content:'\201C';
+    font-size: 35px;
+  }
+
+  blockquote:after {
+    content: '\201D';
+  }
+
+  hr {
+    width: 40%;
+    height: 1px;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-top: 18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration: none;
+  }
+
+  h1,h2 {
+    margin-top: 28px;
+  }
+
+  #sub-header, time {
+    font-size: 13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  li h2 {
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content: "\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content: '';
+    margin-right: 0;
+  }
+
+  #content h1, #content h2 {
+    margin-bottom: 5px;
+  }
+
+  #content h2 {
+    font-size: 16px;
+  }
+
+  #content li h2 {
+    margin-bottom: 0;
+  }
+
+  #content .entry-content {
+    margin-top: 15px;
+  }
+
+  #content time {
+    margin-left: 3px;
+    opacity: 0.65;
+  }
+
+  #content h1 {
+    font-size: 30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin: 0 0 50px;
+  }
+
+  .posts_listing li {
+    margin: 0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align: center;
+    position: static;
+    margin-top: 60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type: none;
+    display: table-cell;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float: right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+
+    body {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    #nav h1 a {
+      font-size: 28px;
+    }
+
+    #nav li {
+      font-size: 13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    #content p, footer p {
+      padding: 0 10px;
+    }
+
+    #content h1 {
+      font-size: 25px;
+    }
+
+    #content h2 {
+      font-size: 22px;
+    }
+
+    .posts_listing li div {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    #nav h1 a {
+      font-size: 22px;
+    }
+
+    #nav li {
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top: 0;
+      font-size: 12px;
+    }
+
+    #content p, footer p {
+      padding: 0 10px;
+    }
+
+    #content h1 {
+      font-size: 20px;
+    }
+
+    #content h2 {
+      font-size: 18px;
+    }
+
+    .posts_listing li div{
+      font-size: 12px;
+    }
+  }
+
+</style>
+
+
+    <link rel="alternate" type="application/rss+xml" href="/index.xml" title="" />
+    </head>
+
+  <body>
+
+
+<div class="container">
+<section id="content">
+ <section id="about">
+ 
+    
+
+</section>
+
+<ul class="posts_listing">
+  <h2>Latest</h2>
+  
+</ul>
+</section>
+</div>
+  
+</body>
+</html>
+

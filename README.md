@@ -1,6 +1,23 @@
 # Bare
 
-A simple theme for Hugo.
+A simple theme for Hugo focused on readability and speed. Made for use as a basic portfolio site or as the basis of a bigger project.
+
+![Bare preview.](https://github.com/luisv5z/Bare/preview.png?raw=true)
+
+## Installation
+
+Download Bare to your themes folder using the recommended `git submodule` approach.
+
+```console
+$ cd themes
+$ git submodule add https://github.com/luisv5z/Bare.git bare
+```
+
+Activate it by modifying the `themes` line on your Hugo project configuration file.
+
+```toml
+theme = "Bare"
+```
 
 ## MIT License
 

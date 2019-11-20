@@ -6,14 +6,14 @@ A simple theme for Hugo focused on readability and speed. Made for use as a basi
 
 ## Installation
 
-Download Bare to your themes folder using the recommended `git submodule` approach.
+Download to your themes folder using the recommended `git submodule` approach.
 
 ```console
 $ cd themes
 $ git submodule add https://github.com/luisv5z/Bare.git bare
 ```
 
-Activate it by modifying the `themes` line on your Hugo project configuration file.
+Activate by modifying the `themes` line on your Hugo project configuration file.
 
 ```toml
 theme = "Bare"

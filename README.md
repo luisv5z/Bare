@@ -2,7 +2,7 @@
 
 A simple theme for Hugo focused on readability and speed. Made for use as a basic portfolio site or as the basis of a bigger project.
 
-![Bare preview.](https://github.com/luisv5z/Bare/preview.png?raw=true)
+![Bare preview.](https://github.com/luisv5z/Bare/raw/master/preview.png?raw=true)
 
 ## Installation
 
